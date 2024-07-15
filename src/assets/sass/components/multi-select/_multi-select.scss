@@ -1,0 +1,28 @@
+.multiselect{
+    padding: 0;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    &.is-open{
+        box-shadow: none;
+    }
+    .multiselect-dropdown{
+        margin: 0;
+        padding: 0;
+        right: 0;
+        left: 0;
+        overflow-y: auto;
+        max-height: 300px;
+        .multiselect-option{
+            height: 50px;
+            &.is-selected{
+                background-color: $primary;
+                color: $white;
+            }
+            &:hover{
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+}
